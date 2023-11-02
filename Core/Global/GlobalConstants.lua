@@ -20,8 +20,8 @@ local addon
 local ns
 addon, ns = ...
 
-local addonShortName = 'ADT'
-local consoleCommand = "adt"
+local addonShortName = 'cb'
+local consoleCommand = "consumablebar"
 local globalVarName = "ADT"
 local useShortName = false
 

@@ -73,6 +73,7 @@ end
 
 ---@param o Namespace
 local function NameSpacePropertiesAndMethods(o)
+
     Mixin(o, Kapresoft_LibUtil_Mixins)
 
     local getSortedKeys = o:KO().Table.getSortedKeys
@@ -90,6 +91,8 @@ local function NameSpacePropertiesAndMethods(o)
     o.pformat = o.O.pformat
     o.sformat = o.O.sformat
     o.M = M
+
+    if not _G['pformat'] then _G['pformat'] = o.pformat end
 
     --- @param moduleName string The module name, i.e. Logger
     --- @param optionalMajorVersion number|string

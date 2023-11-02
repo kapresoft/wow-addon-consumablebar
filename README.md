@@ -1,5 +1,5 @@
 # Status: Experimental Mode
-## ConsumableBar : {{Addon-Short-Description}}
+## ConsumableBar
 
 ### Description
 

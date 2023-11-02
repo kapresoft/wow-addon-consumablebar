@@ -1,7 +1,7 @@
-## Interface: 30400
+## Interface: 30403
 ## Version: @project-version@
 ## Title: ConsumableBar|cff1784d1 WOTLK|r
-## Notes: {{Addon-Short-Description}}
+## Notes: Actionbar for Managing Consumables
 ## Author: kapresoft@gmail.com
 ## DefaultState: enabled
 ## SavedVariables: ADT_DB, ADT_LOG_LEVEL, ADT_DEBUG_MODE
@@ -13,9 +13,9 @@
 ## X-Category: Combat
 ## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
 
-## X-Github-Repo: https://github.com/kapresoft/wow-addon-template
-## X-Github-Issues: https://github.com/kapresoft/wow-addon-template
-## X-CurseForge: https://www.curseforge.com/wow/addons/{{curse-project-name}}
+## X-Github-Repo: https://github.com/kapresoft/wow-addon-consumablebar
+## X-Github-Issues: https://github.com/kapresoft/wow-addon-consumablebar
+## X-CurseForge: https://www.curseforge.com/wow/addons/consumablebar
 ## X-Curse-Project-ID: {{curse-project-id}}
 ## X-Github-Project-Author: @project-author@
 ## X-Github-Project-Hash: @project-hash@

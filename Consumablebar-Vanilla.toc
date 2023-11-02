@@ -1,7 +1,7 @@
-## Interface: 11403
+## Interface: 11404
 ## Version: @project-version@
 ## Title: ConsumableBar|cff1784d1 Retail|r
-## Notes: {{Addon-Short-Description}}
+## Notes: Actionbar for Managing Consumables
 ## Author: kapresoft@gmail.com
 ## DefaultState: enabled
 ## SavedVariables: ADT_DB, ADT_LOG_LEVEL, ADT_DEBUG_MODE
@@ -15,7 +15,7 @@
 
 ## X-Github-Repo: https://github.com/kapresoft/wow-addon-consumablebar
 ## X-Github-Issues: https://github.com/kapresoft/wow-addon-consumablebar/issues
-## X-CurseForge: https://www.curseforge.com/wow/addons/{{curse-project-name}}
+## X-CurseForge: https://www.curseforge.com/wow/addons/consumablebar
 ## X-Curse-Project-ID: {{curse-project-id}}
 ## X-Github-Project-Author: @project-author@
 ## X-Github-Project-Hash: @project-hash@
