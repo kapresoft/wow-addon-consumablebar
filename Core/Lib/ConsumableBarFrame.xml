@@ -17,13 +17,24 @@
     <CheckButton name="ConsumableBarButtonTemplate" inherits="ConsumableBarButtonCodeTemplate, ActionButtonTemplate" virtual="true">
     </CheckButton>
 
-    <Frame name="ConsumableBarMainFrame">
+    <Frame name="ConsumableBarMainFrame" strata="MEDIUM" hidden="false" movable="true" clampedToScreen="true">
+        <Scripts>
+            <OnLoad>
+                self:RegisterForDrag("LeftButton")
+            </OnLoad>
+            <OnDragStart>
+                self:StartMoving()
+            </OnDragStart>
+            <OnDragStop>
+                self:StopMovingOrSizing()
+            </OnDragStop>
+        </Scripts>
         <Size>
             <AbsDimension x="50" y="50"/>
         </Size>
         <Anchors>
             <Anchor point="CENTER" relativeTo="UIParent" relativePoint="CENTER" y="100" x="100"/>
-        </Anchors>
+        </Anchors>qm
         <Layers>
             <Layer level="BACKGROUND">
                 <Texture name="$parentBackground" parent="$parent">
@@ -40,6 +51,11 @@
     </Frame>
 
     <CheckButton name="ConsumableButton1" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="1">
+        <Scripts>
+            <OnLoad>
+                self:EnableMouse(false)
+            </OnLoad>
+        </Scripts>
         <Anchors>
             <Anchor point="BOTTOMLEFT">
                 <Offset>

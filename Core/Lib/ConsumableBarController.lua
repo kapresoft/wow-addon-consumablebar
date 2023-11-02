@@ -4,7 +4,9 @@ print('xxx: ConsumableBarController.lua')
 function ConsumableBarController_OnLoad(frame)
 
     print('xxx OnLoad::', frame:GetName())
-
+    --for i, v in pairs(children) do
+    --
+    --end
 end
 
 function ConsumableBarController_OnEvent(self, event, ...)
