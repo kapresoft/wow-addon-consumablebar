@@ -18,11 +18,24 @@
     </CheckButton>
 
     <Frame name="ConsumableBarMainFrame">
+        <Size>
+            <AbsDimension x="50" y="50"/>
+        </Size>
         <Anchors>
-            <Anchor point="TOPLEFT" relativeTo="ActionbarPlusF9"/>
-            <Anchor point="BOTTOMRIGHT" relativeTo="ActionbarPlusF9"/>
+            <Anchor point="CENTER" relativeTo="UIParent" relativePoint="CENTER" y="100" x="100"/>
         </Anchors>
         <Layers>
+            <Layer level="BACKGROUND">
+                <Texture name="$parentBackground" parent="$parent">
+                    <Size>
+                        <AbsDimension x="220" y="50"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT" y="-3"/>
+                    </Anchors>
+                    <Color r="0" g="0" b="0" a="0.3"/>
+                </Texture>
+            </Layer>
         </Layers>
     </Frame>
 
@@ -30,7 +43,7 @@
         <Anchors>
             <Anchor point="BOTTOMLEFT">
                 <Offset>
-                    <AbsDimension x="0" y="45"/>
+                    <AbsDimension x="8" y="4"/>
                 </Offset>
             </Anchor>
         </Anchors>
@@ -71,6 +84,8 @@
             </Anchor>
         </Anchors>
     </CheckButton>
+
+    <!--
     <CheckButton name="ConsumableButton6" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="6">
         <Anchors>
             <Anchor point="LEFT" relativeTo="ConsumableButton5" relativePoint="RIGHT">
@@ -134,4 +149,5 @@
             </Anchor>
         </Anchors>
     </CheckButton>
+    -->
 </Ui>
