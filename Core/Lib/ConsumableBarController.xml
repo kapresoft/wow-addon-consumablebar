@@ -1,0 +1,14 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Include file="ConsumableButtonTemplate.xml"/>
+    <Script file="ConsumableBarController.lua"/>
+    <Include file="ConsumableBarFrame.xml"/>
+
+
+    <Frame name="ConsumableBarController" parent="UIParent">
+        <Scripts>
+            <OnLoad function="ConsumableBarController_OnLoad"/>
+            <OnEvent function="ConsumableBarController_OnEvent"/>
+        </Scripts>
+    </Frame>
+</Ui>

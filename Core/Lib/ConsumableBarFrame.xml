@@ -1,0 +1,137 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Script file="ConsumableButton.lua"/>
+    <CheckButton name="ConsumableBarButtonCodeTemplate" inherits="SecureActionButtonTemplate" virtual="true">
+        <Scripts>
+            <OnLoad>
+                ConsumableButton_OnLoad(self);
+            </OnLoad>
+            <OnAttributeChanged>
+                ConsumableButton_UpdateAction(self, name, value);
+            </OnAttributeChanged>
+            <OnEvent>
+                ConsumableButton_OnEvent(self, event, ...);
+            </OnEvent>
+        </Scripts>
+    </CheckButton>
+    <CheckButton name="ConsumableBarButtonTemplate" inherits="ConsumableBarButtonCodeTemplate, ActionButtonTemplate" virtual="true">
+    </CheckButton>
+
+    <Frame name="ConsumableBarMainFrame">
+        <Anchors>
+            <Anchor point="TOPLEFT" relativeTo="ActionbarPlusF9"/>
+            <Anchor point="BOTTOMRIGHT" relativeTo="ActionbarPlusF9"/>
+        </Anchors>
+        <Layers>
+        </Layers>
+    </Frame>
+
+    <CheckButton name="ConsumableButton1" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="1">
+        <Anchors>
+            <Anchor point="BOTTOMLEFT">
+                <Offset>
+                    <AbsDimension x="0" y="45"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton2" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="2">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton1" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton3" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="3">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton2" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton4" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="4">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton3" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton5" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="5">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton4" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton6" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="6">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton5" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton7" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="7">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton6" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton8" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="8">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton7" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton9" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="9">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton8" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton10" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="10">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton9" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton11" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="11">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton10" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+    <CheckButton name="ConsumableButton12" inherits="ConsumableBarButtonTemplate" parent="ConsumableBarMainFrame" id="12">
+        <Anchors>
+            <Anchor point="LEFT" relativeTo="ConsumableButton11" relativePoint="RIGHT">
+                <Offset>
+                    <AbsDimension x="6" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+    </CheckButton>
+</Ui>
