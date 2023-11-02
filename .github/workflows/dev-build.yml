@@ -11,7 +11,7 @@ on:
 
 env:
   addonName: ConsumableBar
-  curseForgeProjectId: 782096
+  curseForgeProjectId: 932337
   releaseDir: ./.release
 
 jobs:
