@@ -1,6 +1,6 @@
-## Interface: 20504
+## Interface: 11403
 ## Version: @project-version@
-## Title: AddonTemplate|cff1784d1 TBC|r
+## Title: ConsumableBar|cff1784d1 Retail|r
 ## Notes: {{Addon-Short-Description}}
 ## Author: kapresoft@gmail.com
 ## DefaultState: enabled
@@ -13,8 +13,8 @@
 ## X-Category: Combat
 ## X-License: All Rights Reserved: You are free to fork and modify on GitHub, please ask us about anything else.
 
-## X-Github-Repo: {{GithubProjectUrl}}
-## X-Github-Issues: {{GithubProjectUrl}}/issues
+## X-Github-Repo: https://github.com/kapresoft/wow-addon-consumablebar
+## X-Github-Issues: https://github.com/kapresoft/wow-addon-consumablebar/issues
 ## X-CurseForge: https://www.curseforge.com/wow/addons/{{curse-project-name}}
 ## X-Curse-Project-ID: {{curse-project-id}}
 ## X-Github-Project-Author: @project-author@
@@ -26,4 +26,4 @@
 # /dump select(4, GetBuildInfo())
 
 Core\_Core.xml
-TBC\_TBC.xml
+Vanilla\_Vanilla.xml

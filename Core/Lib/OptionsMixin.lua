@@ -22,7 +22,7 @@ New Instance
 local L = LibStub:NewLibrary(M.OptionsMixin)
 local p = L.logger;
 
---- @param addon AddonTemplate
+--- @param addon ConsumableBar
 function L:Init(addon)
     self.addon = addon
 end
@@ -31,7 +31,7 @@ end
 local function Methods(o)
 
     --- Usage:  local instance = OptionsMixin:New(addon)
-    --- @param addon AddonTemplate
+    --- @param addon ConsumableBar
     --- @return OptionsMixin
     function o:New(addon) return ns:K():CreateAndInitFromMixin(o, addon) end
 

@@ -1,6 +1,6 @@
 ## Template Variables
 
-#### AddonTemplate
+#### ConsumableBar
 >The addon name. Example:  ActionbarPlus
 
 #### {{Addon-Short-Description}}
@@ -15,7 +15,7 @@ Example:
 Example: 
 - If `{{Addon}}` is ActionbarPlus, then `{{Addon-Short-Prefix}}` can be ABP
 
-#### {{GithubProjectUrl}}
+#### https://github.com/kapresoft/wow-addon-consumablebar
 >The Github project URL (without the ending slash)
 > 
 Example:

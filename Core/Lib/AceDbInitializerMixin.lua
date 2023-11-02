@@ -15,7 +15,7 @@ local L = LibStub:NewLibrary(M.AceDbInitializerMixin)
 local p = L.logger;
 
 --- Called by Mixin Automatically
---- @param addon AddonTemplate
+--- @param addon ConsumableBar
 function L:Init(addon)
     self.addon = addon
     self.addon.db = AceDB:New(GC.C.DB_NAME)
@@ -26,7 +26,7 @@ end
 --[[-----------------------------------------------------------------------------
 Methods
 -------------------------------------------------------------------------------]]
---- @param a AddonTemplate
+--- @param a ConsumableBar
 local function AddonCallbackMethods(a)
     function a:OnProfileChanged()
         p:log('OnProfileChanged called...')
@@ -43,7 +43,7 @@ end
 local function Methods(o)
 
     --- Usage:  local instance = AceDbInitializerMixin:New(addon)
-    --- @param addon AddonTemplate
+    --- @param addon ConsumableBar
     --- @return AceDbInitializerMixin
     function o:New(addon) return ns:K():CreateAndInitFromMixin(o, addon) end
 
