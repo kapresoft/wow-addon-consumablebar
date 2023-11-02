@@ -17,7 +17,7 @@
     <CheckButton name="ConsumableBarButtonTemplate" inherits="ConsumableBarButtonCodeTemplate, ActionButtonTemplate" virtual="true">
     </CheckButton>
 
-    <Frame name="ConsumableBarMainFrame" strata="MEDIUM" hidden="false" movable="true" clampedToScreen="true">
+    <Frame name="ConsumableBarMainFrame" frameStrata="MEDIUM" hidden="false" movable="true" clampedToScreen="true">
         <Scripts>
             <OnLoad>
                 self:RegisterForDrag("LeftButton")
@@ -37,7 +37,7 @@
         </Anchors>qm
         <Layers>
             <Layer level="BACKGROUND">
-                <Texture name="$parentBackground" parent="$parent">
+                <Texture name="$parentBackground">
                     <Size>
                         <AbsDimension x="220" y="50"/>
                     </Size>
