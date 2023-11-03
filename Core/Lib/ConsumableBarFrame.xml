@@ -12,6 +12,9 @@
             <OnEvent>
                 ConsumableButton_OnEvent(self, event, ...);
             </OnEvent>
+            <PostClick>
+                ConsumableButton_UpdateState(self, button, down);
+            </PostClick>
         </Scripts>
     </CheckButton>
     <CheckButton name="ConsumableBarButtonTemplate" inherits="ConsumableBarButtonCodeTemplate, ActionButtonTemplate" virtual="true">

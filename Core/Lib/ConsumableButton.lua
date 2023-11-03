@@ -9,3 +9,9 @@ end
 function ConsumableButton_OnEvent(self, event, ...)
     --print('ConsumableButton_OnEvent:: called...')
 end
+
+
+---@param self _CheckButton
+function ConsumableButton_UpdateState(self, button, down)
+    self:SetChecked(false)
+end
