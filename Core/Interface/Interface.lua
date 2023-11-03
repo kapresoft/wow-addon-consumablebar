@@ -54,6 +54,9 @@ GlobalObjects
 -------------------------------------------------------------------------------]]
 --- @class GlobalObjects
 local GlobalObjects = {
+    --- @type LocalLibStub
+    LibStub = {},
+
     --- @type Kapresoft_LibUtil_AceLibraryObjects
     AceLibrary = {},
     --- @type LibStub

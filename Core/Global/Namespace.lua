@@ -59,10 +59,10 @@ local function InitLocalLibStub(o)
     local LocalLibStub = o:K().Objects.LibStubMixin:New(o.name, 1.0,
             function(name, newLibInstance)
                 --- @type Logger
-                local loggerLib = LibStub(o:LibName(o.M.Logger))
+                local loggerLib = o:KO().LoggerMixin
                 if loggerLib then
-                    newLibInstance.logger = loggerLib:NewLogger(name)
-                    newLibInstance.logger:log( 'New Lib: %s', newLibInstance.major)
+                    newLibInstance.logger = loggerLib:NewLogger(o.name, GC.C.LOG_LEVEL_VAR_NAME , GC.C.COLOR_DEF, name)
+                    newLibInstance.logger:log( 30, 'New Lib: %s', newLibInstance.major)
                     function newLibInstance:GetLogger() return self.logger end
                 end
                 o:Register(name, newLibInstance)

@@ -16,8 +16,7 @@ New Instance
 --- @class Core
 local L = LibStub:NewLibrary(M.Core, 1)
 local p = L.logger
-
-p:log("Loaded: %s", 'Core')
+p:log(30, "Loaded: %s", 'Core')
 
 --[[-----------------------------------------------------------------------------
 Methods

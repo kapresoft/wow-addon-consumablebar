@@ -34,6 +34,16 @@ local ADDON_INFO_FMT = '%s|cfdeab676: %s|r'
 local TOSTRING_ADDON_FMT = '|cfdfefefe{{|r|cfdeab676%s|r|cfdfefefe}}|r'
 local TOSTRING_SUBMODULE_FMT = '|cfdfefefe{{|r|cfdeab676%s|r|cfdfefefe::|r|cfdfbeb2d%s|r|cfdfefefe}}|r'
 
+--- @type Kapresoft_LibUtil_ColorDefinition2
+local colorDef = {
+    --- @type Color
+    primary   = CreateColorFromHexString('ff69CC62'),
+    --- @type Color
+    secondary = CreateColorFromHexString('ffbbbbcc'),
+    --- @type Color
+    tertiary = CreateColorFromHexString('ffccbbcc'),
+}
+
 --[[-----------------------------------------------------------------------------
 Support Functions
 -------------------------------------------------------------------------------]]
@@ -78,6 +88,8 @@ local function GlobalConstantProperties(o)
         VAR_NAME = globalVarName,
         CONSOLE_COMMAND_NAME = consoleCommand,
         DB_NAME = dbName,
+        LOG_LEVEL_VAR_NAME = logLevel,
+        COLOR_DEF = colorDef,
         CHECK_VAR_SYNTAX_FORMAT = '|cfdeab676%s ::|r %s',
         CONSOLE_HEADER_FORMAT = '|cfdeab676### %s ###|r',
         CONSOLE_OPTIONS_FORMAT = '  - %-8s|cfdeab676:: %s|r',

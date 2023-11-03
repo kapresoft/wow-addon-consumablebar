@@ -6,12 +6,12 @@ local sformat, unpack = string.format, unpack
 --[[-----------------------------------------------------------------------------
 Local Vars
 -------------------------------------------------------------------------------]]
+local LibStub = LibStub
+
 --- @type Namespace
 local _, ns = ...
-local O, M = ns.O, ns.M
-
-local LibStub = LibStub
-local KO = ns:KO()
+local O, M, KO = ns.O, ns.M, ns:KO()
+local LoggerMixin = KO.LoggerMixin
 
 local GC, ACE, Table, String = O.GlobalConstants, O.AceLibrary, KO.Table, KO.String
 local AceConfigDialog = ACE.AceConfigDialog
@@ -22,7 +22,7 @@ local IsBlank, IsAnyOf, IsEmptyTable = String.IsBlank, String.IsAnyOf, Table.isE
 local A = LibStub("AceAddon-3.0"):NewAddon(ns.name, "AceConsole-3.0", "AceEvent-3.0", "AceHook-3.0")
 local mt = getmetatable(A) or {}
 mt.__tostring = ns:ToStringFunction()
-local p = O.Logger:NewLogger()
+local p = LoggerMixin:NewLogger(ns.name, GC.C.LOG_LEVEL_VAR_NAME , GC.C.COLOR_DEF)
 A.logger = p
 
 --setmetatable(A, mt)
@@ -117,8 +117,8 @@ local function Constructor()
     RegisterEvents(A)
 
     p:log('Loaded: %s', ns.name)
-    p:log('Namespace keys: %s', ns:ToStringNamespaceKeys())
-    p:log('Namespace Object keys: %s', ns:ToStringObjectKeys())
+    p:log(30, 'Namespace keys: %s', ns:ToStringNamespaceKeys())
+    p:log(30, 'Namespace Object keys: %s', ns:ToStringObjectKeys())
 
     ADT = A
 

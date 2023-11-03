@@ -17,10 +17,13 @@
     <CheckButton name="ConsumableBarButtonTemplate" inherits="ConsumableBarButtonCodeTemplate, ActionButtonTemplate" virtual="true">
     </CheckButton>
 
-    <Frame name="ConsumableBarMainFrame" frameStrata="MEDIUM" hidden="false" movable="true" clampedToScreen="true">
+    <!-- Note: Don't inherit from UIParent because it will inherit scale as well -->
+    <Frame name="ConsumableBarMainFrame" frameStrata="MEDIUM" hidden="false"
+           movable="true" clampedToScreen="true">
         <Scripts>
             <OnLoad>
                 self:RegisterForDrag("LeftButton")
+                self:SetScale(UIParent:GetScale())
             </OnLoad>
             <OnDragStart>
                 self:StartMoving()
